@@ -17,7 +17,7 @@ pipeline {
         stage('pull the code form scm') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: "${BRANCH}",
+                //git branch: "${BRANCH}",
                 credentialsId: 'github-creds',
                 url: 'https://github.com/Saleem313/devops-maven-web-app.git'
 
