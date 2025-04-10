@@ -29,8 +29,14 @@ pipeline {
         
         stage('build'){
             steps{
+              script{ 
+               for(i=1; i<70; i++){
+                   echo "${i+1}"
+                   sleep 1
+               }
                 sh 'mvn clean package'
             }
+           }
         }
     }
 }
