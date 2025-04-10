@@ -1,8 +1,10 @@
 pipeline {
     
-    agent{
+    /*agent{
         label 'any'
-    }
+    }*/
+
+    agent any
     
 
     tools {
