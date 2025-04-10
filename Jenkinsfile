@@ -1,20 +1,20 @@
 pipeline {
     
     agent{
-        label 'FirstNode'
+        label 'any'
     }
     
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "maven-3.x"
+        maven "m399"
     }
     
    
     
 
     stages {
-        stage('pull the code form scm') {
+        /*stage('pull the code form scm') {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'master',
@@ -23,7 +23,7 @@ pipeline {
 
               
             }
-        }
+        }*/
         
         stage('build'){
             steps{
